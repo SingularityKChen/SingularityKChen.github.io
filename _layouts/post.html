@@ -77,7 +77,7 @@ layout: blog
                 {% if site.gitment.owner and site.gitment.repo and site.gitment.client_id and site.gitment.client_secret != false %}
                     <div id="container"></div>
                     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+                    <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
                     <script>
                     var gitment = new Gitment({
                       owner: "{{ site.gitment.owner}}",
@@ -89,6 +89,20 @@ layout: blog
                       labels: "{{ page.title }}",
                     })
                     gitment.render('container')
+                    // Auto Initialize Comments
+                    // https://github.com/imsun/gitment/issues/196
+                    let cmtBtns = document.getElementsByClassName('gitment-comments-init-btn');
+                    let isClicked = false;
+                    let timer = setInterval(() => {
+                      Array.prototype.forEach.call(cmtBtns, item => {
+                        item.click();
+                        isClicked = true;
+                        if(isClicked) {
+                          clearInterval(timer);
+                          console.log('Clear timer.')
+                        }        
+                      })
+                    }, 1000)
                     </script>
                 {% endif %}
             </div>
