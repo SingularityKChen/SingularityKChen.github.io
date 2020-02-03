@@ -6,12 +6,13 @@ lang: en # Language code as defined in _data/i18n.yml. en, en-gb, en-us, zh, zh-
 permalink: /blog/:year/:month/:day/:title/
 remote_theme: yizeng/jekyll-theme-simple-texture
 
-whitelist: [jekyll-feed, jekyll-redirect-from, jekyll-seo-tag, jekyll-sitemap]
+whitelist: [jekyll-feed, jekyll-redirect-from, jekyll-seo-tag, jekyll-sitemap, jekyll-toc]
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-toc
 #excerpt_separator: <!--more-->
 markdown: kramdown
 kramdown:
@@ -84,3 +85,4 @@ defaults:
       author: SingularityKChen
       excerpt: There is no thing to show~
       comments: true
+      toc: true

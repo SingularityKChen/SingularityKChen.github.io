@@ -43,8 +43,9 @@ layout: blog
                             {% assign tags_list = page.tags | sort %} {% include helpers/tags_list %}
                         </ul>
                     </div>
+                    <!-- <div id="sidebar_catelog" class="toc" style="position:fixed;_position:absolute;top:5%;right: -1%;background-color: rgba(255, 153, 0, 0.5);"></div> -->
                     <div itemprop="articleBody">
-                        {{ content }}
+                        {{ content | inject_anchors }}
                     </div>
                 </div>
             </div>
