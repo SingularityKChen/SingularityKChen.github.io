@@ -83,6 +83,6 @@ defaults:
       type: "posts"
     values:
       author: SingularityKChen
-      excerpt: There is no thing to show~
+      excerpt: There is no excerpt to show~
       comments: true
       toc: true
