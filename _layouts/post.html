@@ -43,8 +43,8 @@ layout: blog
                             {% assign tags_list = page.tags | sort %} {% include helpers/tags_list %}
                         </ul>
                     </div>
-                    <!-- <div id="sidebar_catelog" class="toc" style="position:fixed;_position:absolute;top:5%;right: -1%;background-color: rgba(255, 153, 0, 0.5);"></div> -->
-                    <div itemprop="articleBody">
+
+                    <div itemprop="articleBody" id="inject_anchors">
                         {{ content | inject_anchors }}
                     </div>
                 </div>
@@ -59,10 +59,20 @@ layout: blog
                     </div>
                     <nav class="pagination">
                         {% if page.previous %}
-                            <a class="internal" rel="prev" href="{{ page.previous.url | relative_url }}" title="{{ site.data.i18n[site.lang].previous_post }} '{{ page.previous.title }}'"> ← {{ page.previous.title }}</a>
+                            <div style="float: left; max-width: 40%;">
+                                <a class="internal" rel="prev" href="{{ page.previous.url | relative_url }}" title="{{ site.data.i18n[site.lang].previous_post }} '{{ page.previous.title }}'"> ← {{ page.previous.title }}</a>
+                                {% if page.previous.excerpt %}
+                                    <p style="opacity: 0.6; float: left;">{{ page.previous.excerpt }}</p>
+                                {% endif %}
+                            </div>
                         {% endif %}
                         {% if page.next %}
-                            <a class="internal" rel="next" href="{{ page.next.url | relative_url }}" title="{{ site.data.i18n[site.lang].next_post }} '{{ page.next.title }}'">{{ page.next.title }} → </a>
+                            <div style="float: right; max-width: 40%;">
+                                <a class="internal" rel="next" href="{{ page.next.url | relative_url }}" title="{{ site.data.i18n[site.lang].next_post }} '{{ page.next.title }}'">{{ page.next.title }} → </a>
+                                {% if page.next.excerpt %}
+                                    <p style="opacity: 0.6; float: right;">{{ page.next.excerpt }}</p>
+                                {% endif %}
+                            </div>
                         {% endif %}
                     </nav>
                 </div>

@@ -6,13 +6,13 @@ lang: en # Language code as defined in _data/i18n.yml. en, en-gb, en-us, zh, zh-
 permalink: /blog/:year/:month/:day/:title/
 remote_theme: yizeng/jekyll-theme-simple-texture
 
-whitelist: [jekyll-feed, jekyll-redirect-from, jekyll-seo-tag, jekyll-sitemap, jekyll-toc]
+whitelist: [jekyll-feed, jekyll-redirect-from, jekyll-seo-tag, jekyll-sitemap, jekyll-sitemap]
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-toc
+  - jekyll-sitemap
 #excerpt_separator: <!--more-->
 markdown: kramdown
 kramdown:
@@ -61,8 +61,8 @@ blog:
 disqus:
   shortname: singularitykchen
   public_key: # e.g. ULZ0b9TFefCUJHKQd4JCKv2v3u27YoG7YG8zXPewkWrT333Z0Se9YnxLzoV6VM8W
-google_tag_manager: # e.g. 'GTM-KCQJXZ8F'
-addthis_public_id: # AddThis sharing plugin. See http://www.addthis.com/. E.g. ra-53329e27694534j5 
+google_tag_manager: 'GTM-N9PHJ33'
+addthis_public_id: ra-5e3fc3124044d9e9
 
 gitment:
   owner: singularitykchen
@@ -85,4 +85,3 @@ defaults:
       author: SingularityKChen
       excerpt: There is no excerpt to show~
       comments: true
-      toc: true

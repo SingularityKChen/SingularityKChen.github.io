@@ -4,7 +4,10 @@
 <link rel="shortcut icon" href="{{ site.url}}/assets/images/favicon.ico">
 {% seo %}
 <meta name="keywords" content="{% if site.author.username %}{{ site.author.username }},{% endif %}{% if page.tags != null %}{{ page.tags | join: ',' }}{% else %}{{ site.blog.keywords }}{% endif %}" />
-
+<meta name="google-site-verification" content="ockUThiMCWyWA5I9_h8p4eQyM_zwkvjWao1Wszoc7eU" />
+{% if page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | escape }}"> 
+{% endif %}
 {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="5; url={{ site.paths.blog | relative_url }}">
 {% endif %}

@@ -26,20 +26,16 @@
 
     <div id="page" class="hentry">
         {% include blog/header.html %}
-
-        <div class="body animated fadeInDown" role="main">
-            <div class="unit-body">
+        <div class="body animated fadeInDown">
+            <div class="unit-body" role="main">
                 <div class="unit-inner unit-body-inner">
                     <div class="entry-content">
                         {{ content }}
                     </div>
                 </div>
             </div>
-        </div>
         {% include blog/footer.html %}
     </div>
-
     {% include blog/scripts.html %}
 </body>
-
 </html>
