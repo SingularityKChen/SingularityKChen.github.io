@@ -54,8 +54,8 @@ home:
   section2: <h2>I am a slow walker, but I never walk back.</h2>
   section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/SingularityKChen" title="View on GitHub"></a></div>
 blog:
-  cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
-  cc_license_image: /assets/images/theme/cc-by-sa.png # An image of your CC License. 
+  cc_license: https://creativecommons.org/licenses/by-nc-sa/4.0/ # A link to CC License of your choice.
+  cc_license_image: /assets/images/theme/cc-by-nc-sa.png # An image of your CC License. 
   footer_content: A gem-based responsive simple texture styled <a href="http://jekyllrb.com/">Jekyll</a> theme.
 
 disqus:
