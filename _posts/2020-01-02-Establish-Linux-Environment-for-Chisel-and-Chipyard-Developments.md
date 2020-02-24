@@ -12,9 +12,9 @@ redirect_from:
 
 * Kramdown table of contents
 {:toc .toc}
-# Why need a tutorial for Establish Chisel Environment?
+# Why need a tutorial for Establishing Chisel Environment?
 
-I develop the projects in Virtual Ubuntu Linux, and at the beginning, I always met kinds of errors when I establish the development environment for Chisel, and I destroyed at least three Virtual Machines because of the wrong environments. Then I concluded several right steps to do that. I tried the steps when I gave up VM and created a new Ubuntu with Virtual Box, it works.
+I develop the projects in Virtual Ubuntu Linux, and at the beginning, I always met kinds of errors when I establish the development environment for Chisel which is time-costing and annoying, and I destroyed at least three Virtual Machines because of the wrong environments. Then I concluded several right steps to do that. I tried the steps when I gave up VM and created a new Ubuntu with Virtual Box, it worked well without any error.
 
 # Pre- Set Up
 
