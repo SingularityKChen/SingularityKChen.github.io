@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Establish Linux Environment for Chisel and Chipyard Developments"
+title: "[Tutorial] Establish Linux Environment for Chisel and Chipyard Developments"
 description: "This tutorial will help you to establish a Linux environment for Chisel and Chipyard development quickly with little error."
 categories: [Tutorial]
 tags: [Chipyard, RISC-V, Scala, Sbt, Mill]
