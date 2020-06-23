@@ -4,7 +4,7 @@ title: "[Tutorial] Establish Linux Environment for Chisel and Chipyard Developme
 description: "This tutorial will help you to establish a Linux environment for Chisel and Chipyard development quickly with little error."
 categories: [Tutorial]
 tags: [Chipyard, RISC-V, Scala, Sbt, Mill]
-last_updated: 2020-02-16 19:26:00 GMT+8
+last_updated: 2020-06-23 23:02:00 GMT+8
 excerpt: This tutorial will help you to establish a Linux environment for Chisel and Chipyard development quickly with little error.
 redirect_from:
   - /2020/01/03/
@@ -42,9 +42,17 @@ sudo apt-get install sbt
 
 [Mill](https://github.com/lihaoyi/mill) is another Scala build tool, i.e., an alternative choice of Sbt.
 
+------
+
+Added on 23 June, 2020.
+
+You can find the newest release number on [this document](http://www.lihaoyi.com/mill/#manual).
+
+------
+
 ```shell
 sudo su
-curl -L https://github.com/lihaoyi/mill/releases/download/0.5.6/0.5.6 > /usr/local/bin/mill
+curl -L https://github.com/lihaoyi/mill/releases/download/0.7.3/0.7.3 > /usr/local/bin/mill
 chmod +x /usr/local/bin/mill
 ```
 
