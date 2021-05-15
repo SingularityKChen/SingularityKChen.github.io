@@ -4,7 +4,7 @@ title: "[Tutorial] Establish Linux Environment for Chisel and Chipyard Developme
 description: "This tutorial will help you to establish a Linux environment for Chisel and Chipyard development quickly with little error."
 categories: [Tutorial]
 tags: [Chipyard, RISC-V, Scala, Sbt, Mill]
-last_updated: 2020-06-23 23:02:00 GMT+8
+last_updated: 2021-05-15 14:55:00 GMT+8
 excerpt: This tutorial will help you to establish a Linux environment for Chisel and Chipyard development quickly with little error.
 redirect_from:
   - /2020/01/03/
@@ -44,16 +44,20 @@ sudo apt-get install sbt
 
 ------
 
-Added on 23 June, 2020.
+Edited on May 15th, 2021.
 
-You can find the newest release number on [this document](http://www.lihaoyi.com/mill/#manual).
+You can find the newest release version on [this document](https://com-lihaoyi.github.io/mill/mill/Intro_to_Mill.html).
 
 ------
 
 ```shell
-sudo su
-curl -L https://github.com/lihaoyi/mill/releases/download/0.7.3/0.7.3 > /usr/local/bin/mill
-chmod +x /usr/local/bin/mill
+sudo sh -c "curl -L https://github.com/com-lihaoyi/mill/releases/download/0.9.7/0.9.7 > /usr/local/bin/mill && chmod +x /usr/local/bin/mill"
+```
+
+Command to generate configurations for Idea support:
+
+```bash
+mill mill.scalalib.GenIdea/idea
 ```
 
 ## 3. Install Java 8 and Set Default Version
@@ -150,3 +154,6 @@ cd chisel-bootcamp
 mkdir -p ~/.jupyter/custom
 cp source/custom.js ~/.jupyter/custom/custom.js
 ```
+
+
+
