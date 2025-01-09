@@ -1,3 +1,6 @@
 [submodule "_posts/Weekly_Review_in_NTU"]
 	path = _posts/Weekly_Review_in_NTU
 	url = https://github.com/SingularityKChen/Weekly_Review_in_NTU.git
+[submodule "_posts/Blog_Files"]
+	path = _posts/Blog_Files
+	url = git@github.com:SingularityKChen/SingularityKChen.github.io-Blog-Files.git
